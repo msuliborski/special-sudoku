@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="180.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sulikedzi.specialsudoku.view.DbDeleteDialogue">
+    <children>
+        <ComboBox fx:id="dbComboBoxList" layoutX="28.0" layoutY="27.0" prefHeight="63.0" prefWidth="444.0" promptText="choose_delete" />
+        <Button fx:id="deleteDbButton" layoutX="38.0" layoutY="119.0" mnemonicParsing="false" onAction="#deleteFromDb" prefHeight="47.0" prefWidth="424.0" text="delete" />
+    </children>
+</AnchorPane>
