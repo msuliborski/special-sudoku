@@ -30,11 +30,12 @@ public class DbLoadDialogue implements Initializable {
     @SuppressWarnings("Duplicates")
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ResourceBundle bundle;
-        if(MainView.isEnglish)
-            bundle = ResourceBundle.getBundle(BUNDLE_NAME);
-        else
-            bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pl"));
+        ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);;
+        switch (MainView.currentLanguage) {
+            case "eng": bundle = ResourceBundle.getBundle(BUNDLE_NAME); break;
+            case "pl": bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pl")); break;
+            case "pt": bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pt")); break;
+        }
 
         loadDbButton.setText(bundle.getString("loadButton"));
 
@@ -50,7 +51,7 @@ public class DbLoadDialogue implements Initializable {
         } catch(DaoException e) {
             logger.log(Level.SEVERE, DaoException.MISSING_FILE, e);
         }
-        dbComboBoxList.setPromptText(MainView.getInstance().getCurrentBundle().getString("choose_save"));
+        dbComboBoxList.setPromptText(MainView.getInstance().getCurrentBundle().getString("choose_load"));
         loadDbButton.setText(MainView.getInstance().getCurrentBundle().getString("loadButton"));
     }
 

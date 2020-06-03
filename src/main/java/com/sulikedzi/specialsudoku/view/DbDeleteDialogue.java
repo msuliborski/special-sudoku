@@ -29,11 +29,12 @@ public class DbDeleteDialogue implements Initializable {
     @SuppressWarnings("Duplicates")
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        ResourceBundle bundle;
-        if(MainView.isEnglish)
-            bundle = ResourceBundle.getBundle(BUNDLE_NAME);
-        else
-            bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pl"));
+        ResourceBundle bundle = ResourceBundle.getBundle(BUNDLE_NAME);;
+        switch (MainView.currentLanguage) {
+            case "eng": bundle = ResourceBundle.getBundle(BUNDLE_NAME); break;
+            case "pl": bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pl")); break;
+            case "pt": bundle = ResourceBundle.getBundle(BUNDLE_NAME, new Locale("pt")); break;
+        }
 
         deleteDbButton.setText(bundle.getString("deleteButton"));
 
