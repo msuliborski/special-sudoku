@@ -107,7 +107,9 @@ public class MainView implements Initializable {
     public Button box8;
     public Button box9;
 
-    public Button stopVoice;
+    public Text readCol;
+    public Text readRow;
+    public Text readBox;
 
     private static final String BUNDLE_NAME = "interfaceLanguage";
     private List<List<TextField>> boardTextFields = new ArrayList<>();
@@ -227,6 +229,13 @@ public class MainView implements Initializable {
             for (int y = 0; y < 9; y++) {
                 boardTextFields.get(x).get(y).setText("");
             }
+
+        for (List<TextField> elementList : boardTextFields) {
+            for (TextField element : elementList) {
+                element.setStyle("-fx-background-color: #FFFFFFFF; -fx-border-color: #000000FF");
+            }
+        }
+
     }
 
     public void reinitializeBoard() {
@@ -263,22 +272,33 @@ public class MainView implements Initializable {
         verifyText.setFill(Color.web(currentNeutralColor));
     }
 
+    private void colorTextFields(String color) {
+        for (List<TextField> elementList : boardTextFields) {
+            for (TextField element : elementList) {
+                if (!element.getText().equals("")) element.setStyle("-fx-background-color: "+ color + "55; -fx-border-color: #000000FF");
+            }
+        }
+    }
+
     public void verify() {
         if (sudokuBoard != null) {
-            if (sudokuBoard.verify() && !sudokuBoard.areThereZeros()) {
+            if (sudokuBoard.areThereOnlyZeros()) {
+                verifyText.setText(bundle.getString("newGame"));
+                verifyText.setFill(Color.web(currentWrongColor));
+                colorTextFields(currentNeutralColor);
+            } else if (sudokuBoard.verify() && !sudokuBoard.areThereZeros()) {
                 verifyText.setText(bundle.getString("correct"));
                 verifyText.setFill(Color.web(currentCorrectColor));
+                colorTextFields(currentCorrectColor);
             } else if (sudokuBoard.verify()) {
                 verifyText.setText(bundle.getString("noLogicErrors"));
                 verifyText.setFill(Color.web(currentNeutralColor));
+                colorTextFields(currentNeutralColor);
             } else {
-
                 verifyText.setText(bundle.getString("wrong"));
                 verifyText.setFill(Color.web(currentWrongColor));
+                colorTextFields(currentWrongColor);
             }
-        } else {
-            verifyText.setText(bundle.getString("newGame"));
-            verifyText.setFill(Color.web(currentWrongColor));
         }
     }
 
@@ -351,6 +371,10 @@ public class MainView implements Initializable {
         assistanceOff.setText(bundle.getString("assistanceOff"));
 
         verifyText.setText(bundle.getString("verifyButton"));
+
+        readCol.setText(bundle.getString("readColumn"));
+        readRow.setText(bundle.getString("readRow"));
+        readBox.setText(bundle.getString("readBox"));
     }
 
     public void openSaveWindow() throws IOException {

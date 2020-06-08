@@ -154,8 +154,17 @@ public class SudokuBoard implements Serializable, Cloneable {
                 }
             }
         }
-
         return false;
+    }
+    public boolean areThereOnlyZeros() {
+        for (int x = 0; x < 9; x++) {
+            for (int y = 0; y < 9; y++) {
+                if (board.get(x).get(y).getFieldValue() != 0) {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
 

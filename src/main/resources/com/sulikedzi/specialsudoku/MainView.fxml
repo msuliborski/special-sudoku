@@ -31,7 +31,7 @@
                             </content>
                         </SeparatorMenuItem>
                         <SeparatorMenuItem mnemonicParsing="false" />
-                        <MenuItem fx:id="startEasy" mnemonicParsing="false"  onAction="#startGameEasy" text="Easy" />
+                        <MenuItem fx:id="startEasy" mnemonicParsing="false" onAction="#startGameEasy" text="Easy" />
                         <MenuItem fx:id="startMedium" mnemonicParsing="false" onAction="#startGameMedium" text="Medium" />
                         <MenuItem fx:id="startHard" mnemonicParsing="false" onAction="#startGameHard" text="Hard" />
                         <SeparatorMenuItem mnemonicParsing="false" />
@@ -115,152 +115,152 @@
                         <Font size="56.0" />
                     </font>
                 </Text>
-            <Button fx:id="column1" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="1" onAction="#readColumn" userData="1">
+            <Button fx:id="column1" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="1" userData="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box1" layoutX="776.0" layoutY="215.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="1" onAction="#readBox" userData="1">
+            <Button fx:id="box1" layoutX="776.0" layoutY="215.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="1" userData="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box9" layoutX="916.0" layoutY="355.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="9" onAction="#readBox" userData="9">
+            <Button fx:id="box9" layoutX="916.0" layoutY="355.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="9" userData="9">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box8" layoutX="846.0" layoutY="355.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="8" onAction="#readBox" userData="8">
+            <Button fx:id="box8" layoutX="846.0" layoutY="355.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="8" userData="8">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box7" layoutX="776.0" layoutY="355.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="7" onAction="#readBox" userData="7">
+            <Button fx:id="box7" layoutX="776.0" layoutY="355.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="7" userData="7">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box2" layoutX="846.0" layoutY="215.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="2" onAction="#readBox" userData="2">
+            <Button fx:id="box2" layoutX="846.0" layoutY="215.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="2" userData="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box4" layoutX="776.0" layoutY="285.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="4" onAction="#readBox" userData="4">
+            <Button fx:id="box4" layoutX="776.0" layoutY="285.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="4" userData="4">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box3" layoutX="916.0" layoutY="215.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="3" onAction="#readBox" userData="3">
+            <Button fx:id="box3" layoutX="916.0" layoutY="215.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="3" userData="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box5" layoutX="846.0" layoutY="285.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="5" onAction="#readBox" userData="5">
+            <Button fx:id="box5" layoutX="846.0" layoutY="285.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="5" userData="5">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="box6" layoutX="916.0" layoutY="285.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="6" onAction="#readBox" userData="6">
+            <Button fx:id="box6" layoutX="916.0" layoutY="285.0" mnemonicParsing="false" onAction="#readBox" prefHeight="70.0" prefWidth="70.0" text="6" userData="6">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column2" layoutX="71.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="2" onAction="#readColumn" userData="2">
+            <Button fx:id="column2" layoutX="71.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="2" userData="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column3" layoutX="142.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="3" onAction="#readColumn" userData="3">
+            <Button fx:id="column3" layoutX="142.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="3" userData="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column4" layoutX="214.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="4" onAction="#readColumn" userData="4">
+            <Button fx:id="column4" layoutX="214.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="4" userData="4">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column5" layoutX="285.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="5" onAction="#readColumn" userData="5">
+            <Button fx:id="column5" layoutX="285.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="5" userData="5">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column6" layoutX="356.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="6" onAction="#readColumn" userData="6">
+            <Button fx:id="column6" layoutX="356.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="6" userData="6">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column7" layoutX="428.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="7" onAction="#readColumn" userData="7">
+            <Button fx:id="column7" layoutX="428.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="7" userData="7">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column8" layoutX="499.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="8" onAction="#readColumn" userData="8">
+            <Button fx:id="column8" layoutX="499.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="8" userData="8">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="column9" layoutX="570.0" layoutY="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="9" onAction="#readColumn" userData="9">
+            <Button fx:id="column9" layoutX="570.0" layoutY="640.0" mnemonicParsing="false" onAction="#readColumn" prefHeight="70.0" prefWidth="70.0" text="9" userData="9">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row1" layoutX="640.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="1" onAction="#readRow" userData="1">
+            <Button fx:id="row1" layoutX="640.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="1" userData="1">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row2" layoutX="640.0" layoutY="70.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="2" onAction="#readRow" userData="2">
+            <Button fx:id="row2" layoutX="640.0" layoutY="70.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="2" userData="2">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row3" layoutX="640.0" layoutY="140.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="3" onAction="#readRow" userData="3">
+            <Button fx:id="row3" layoutX="640.0" layoutY="140.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="3" userData="3">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row4" layoutX="640.0" layoutY="215.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="4" onAction="#readRow" userData="4">
+            <Button fx:id="row4" layoutX="640.0" layoutY="215.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="4" userData="4">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row5" layoutX="640.0" layoutY="285.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="5" onAction="#readRow" userData="5">
+            <Button fx:id="row5" layoutX="640.0" layoutY="285.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="5" userData="5">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row6" layoutX="640.0" layoutY="355.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="6" onAction="#readRow" userData="6">
+            <Button fx:id="row6" layoutX="640.0" layoutY="355.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="6" userData="6">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row7" layoutX="640.0" layoutY="430.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="7" onAction="#readRow" userData="7">
+            <Button fx:id="row7" layoutX="640.0" layoutY="430.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="7" userData="7">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row8" layoutX="640.0" layoutY="500.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="8" onAction="#readRow" userData="8">
+            <Button fx:id="row8" layoutX="640.0" layoutY="500.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="8" userData="8">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Button fx:id="row9" layoutX="640.0" layoutY="570.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="70.0" text="9" onAction="#readRow" userData="9">
+            <Button fx:id="row9" layoutX="640.0" layoutY="570.0" mnemonicParsing="false" onAction="#readRow" prefHeight="70.0" prefWidth="70.0" text="9" userData="9">
                <font>
                   <Font size="24.0" />
                </font>
             </Button>
-            <Text layoutX="821.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read box">
+            <Text fx:id="readBox" layoutX="759.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read box" textAlignment="CENTER" wrappingWidth="244.01171875">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="678.0" layoutY="328.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read row">
+            <Text fx:id="readRow" layoutX="478.0" layoutY="330.0" rotate="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read row" textAlignment="CENTER" wrappingWidth="498.57421875">
                <font>
                   <Font size="24.0" />
                </font>
             </Text>
-            <Text layoutX="251.0" layoutY="736.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read column">
+            <Text fx:id="readCol" layoutX="38.0" layoutY="736.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read column" textAlignment="CENTER" wrappingWidth="564.62109375">
                <font>
                   <Font size="24.0" />
                </font>
