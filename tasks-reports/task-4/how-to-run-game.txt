@@ -1,0 +1,9 @@
+In order to run application please follow instructions below:
+
+Requirements:
+ - Intellij IDEA
+ - JDK 11
+
+Step 1: open project in Intellij IDEA
+Step 2: Right-click on MainApp class
+Step 3: Click on: Run 'MainApp.main()'
